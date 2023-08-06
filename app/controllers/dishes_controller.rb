@@ -13,3 +13,4 @@ class DishesController < ApplicationController
         flash[:alert] = 'Please select a CSV file.'
       end
     end
+end
