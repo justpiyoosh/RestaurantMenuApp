@@ -12,7 +12,7 @@ class DishesController < ApplicationController
             File.open(csv_file_path, 'wb') do |file|
               file.write(uploaded_file.read)
             end
-            # CsvWorkerJob.perform_later(uploaded_file.tempfile.path)
+            CsvWorkerJob.perform_later(uploaded_file.tempfile.path)
         end
 
         redirect_to dishes_path
