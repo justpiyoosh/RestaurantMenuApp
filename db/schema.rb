@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_06_152411) do
   create_table "dishes", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.string "type"
+    t.string "dish_type"
     t.string "allergens"
     t.string "category"
     t.decimal "price"

@@ -3,7 +3,7 @@ class CreateDishes < ActiveRecord::Migration[7.0]
     create_table :dishes do |t|
       t.string :name
       t.text :description
-      t.string :type
+      t.string :dish_type
       t.string :allergens
       t.string :category
       t.decimal :price

@@ -3,6 +3,7 @@
 <table class="table">
   <thead>
     <tr>
+    <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th>Type</th>
@@ -14,9 +15,10 @@
   <tbody>
     <% @dishes.each do |dish| %>
       <tr>
+        <td><%= dish.id %></td>
         <td><%= dish.name %></td>
         <td><%= dish.description %></td>
-        <td><%= dish.type %></td>
+        <td><%= dish.dish_type %></td>
         <td><%= dish.allergens %></td>
         <td><%= dish.category %></td>
         <td><%= dish.price %></td>
